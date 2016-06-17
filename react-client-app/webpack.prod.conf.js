@@ -26,7 +26,7 @@ config.module.loaders = [
     {
         test: /\.styl$/,
         exclude: /(node_modules)/,
-        loader: ExtractTextPlugin.extract('style', 'css?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!postcss!stylus-loader')
+        loader: ExtractTextPlugin.extract('style', 'css?resolve url?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!postcss!stylus-loader')
     },
     {
         test: /\.(png|jpg)$/,
